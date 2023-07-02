@@ -52,5 +52,19 @@ public class Practice02 {
         int n = Integer.parseInt(age2);// Integer.parseInt()文字列を数値型に変換する
         System.out.println("あなたは来年" + n + "歳ですね");
 
+        // ------------------------------------------------------------------------------//
+
+        int r = new java.util.Random().nextInt(90);// new java.util.Random().nextInt(上限値);ランダム乱数
+        System.out.println("あなたは多分今" + r + "歳ですね??");
+
+        // -----------------------------------------------------------------------------------------------//
+
+        System.out.println("あなたの名前を入力してください!!");
+        // キーボードから一行の入力を受け付ける
+        String name_1 = new java.util.Scanner(System.in).nextLine();// newjava.util.Scanner(System.in).nextLine()
+        System.out.println("あなたの年齢を入力して下さい!!");
+        // キーボードから一つの整数を入力を受け付ける
+        int age_1 = new java.util.Scanner(System.in).nextInt();// new java.util.Scanner(System.in).nextInt()
+        System.out.println("ようこそ!!" + age_1 + "歳の" + name_1 + "さん!!");
     }
 }
