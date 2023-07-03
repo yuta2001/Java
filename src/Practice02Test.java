@@ -1,3 +1,5 @@
+import java.lang.System;
+
 public class Practice02Test {
     public static void main(String[] args) throws Exception {
 

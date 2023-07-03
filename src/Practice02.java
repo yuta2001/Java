@@ -1,4 +1,6 @@
-import javax.swing.plaf.synth.SynthRootPaneUI;
+
+//import javax.swing.plaf.synth.SynthRootPaneUI;
+import java.lang.System;
 
 public class Practice02 {
     public static void main(String[] args) throws Exception {
