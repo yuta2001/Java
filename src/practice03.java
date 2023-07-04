@@ -1,4 +1,5 @@
 public class practice03 {
+
     public static void main(String[] args) throws Exception {
         boolean whether = true;
 
