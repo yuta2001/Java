@@ -22,5 +22,16 @@ public class practice03 {
         } else {
             System.out.println("不正解です");
         }
+
+        // -------------------------------------------------------------------------------------//
+
+        int hp = 100;
+        boolean poison = false;
+
+        if ((hp < 100 && poison == false) || (hp >= 100 && poison == true)) {
+            System.out.println("テストです");
+        } else {
+            System.out.println("テスト2です");
+        }
     }
 }
