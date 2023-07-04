@@ -18,5 +18,16 @@ public class practice03_2 {
             System.out.println(i + "回目です");
         }
 
+        // --------------------------------------------------------------------------------//
+
+        System.out.println("九九の表を作ってみました");
+        for (int i = 1; i < 10; i++) {
+            for (int j = 1; j < 10; j++) {
+                System.out.print(i * j);
+                System.out.print(" ");
+            }
+            System.out.println("");
+        }
+
     }
 }
