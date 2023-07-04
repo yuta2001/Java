@@ -11,8 +11,16 @@ public class practice03 {
 
         String name = "yuta";
 
-        while (name == "yuta") {
+        // while (name == "yuta") {
+        // System.out.println("正解です!!");
+        // }
+
+        // Stringの文字列の比較をする場合＞変数名.equals(比較対象)
+        // 一応==でもできるけど意味不明なエラーが起こる時がある
+        if (name.equals("yuta")) {
             System.out.println("正解です!!");
+        } else {
+            System.out.println("不正解です");
         }
     }
 }
