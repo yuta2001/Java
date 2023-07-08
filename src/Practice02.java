@@ -1,6 +1,6 @@
 
-//import javax.swing.plaf.synth.SynthRootPaneUI;
 import java.lang.System;
+import java.util.Scanner;
 
 public class Practice02 {
     public static void main(String[] args) throws Exception {
@@ -63,10 +63,20 @@ public class Practice02 {
 
         System.out.println("あなたの名前を入力してください!!");
         // キーボードから一行の入力を受け付ける
-        String name_1 = new java.util.Scanner(System.in).nextLine();// newjava.util.Scanner(System.in).nextLine()
+        // String name_1 = new java.util.Scanner(System.in).nextLine();//
+        // newjava.util.Scanner(System.in).nextLine()
+        Scanner scanner = new Scanner(System.in);
+        String name_1 = scanner.nextLine();
+
         System.out.println("あなたの年齢を入力して下さい!!");
-        // キーボードから一つの整数を入力を受け付ける
-        int age_1 = new java.util.Scanner(System.in).nextInt();// new java.util.Scanner(System.in).nextInt()
+        // int age_1 = new java.util.Scanner(System.in).nextInt();// new
+        // java.util.Scanner(System.in).nextInt()
+        Scanner scanner2 = new Scanner(System.in);
+        int age_1 = scanner2.nextInt();
+
         System.out.println("ようこそ!!" + age_1 + "歳の" + name_1 + "さん!!");
+
+        scanner.close();
+        scanner2.close();
     }
 }
