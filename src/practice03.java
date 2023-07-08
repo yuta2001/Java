@@ -65,9 +65,11 @@ public class practice03 {
         System.out.println("あなたの運勢を占います");
         System.out.println("あなたの名前を入力してください");
         String you_name = new java.util.Scanner(System.in).nextLine();
+
         System.out.println("あなたの年齢を入力して下さい");
         int you_age = new java.util.Scanner(System.in).nextInt();
-        System.out.println("結果が出ました!!OKと入力してください");
+
+        System.out.println("結果が出ました!!文字を入力してください");
         String result = new java.util.Scanner(System.in).nextLine();
 
         int fortune = new java.util.Random().nextInt(4) + 1;
@@ -86,16 +88,19 @@ public class practice03 {
         switch (fortune) {
             // この場合case1,case2共に中吉になる
             case 1:
-                // System.out.println("大吉です");
-                // break;
+                System.out.println("大吉です");
+                break;
             case 2:
                 System.out.println("中吉です");
                 break;
             case 3:
                 System.out.println("小吉です");
                 break;
-            default:
+            case 4:
                 System.out.println("凶です");
+                break;
+            default:
+                System.out.println("大凶です");
         }
     }
 }

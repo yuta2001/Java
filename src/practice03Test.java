@@ -20,9 +20,9 @@ public class practice03Test {
         // int selected = new java.util.Scanner(System.in).nextInt();
 
         Scanner scanner = new Scanner(System.in);
-        String selected = scanner.nextLine();
-        System.out.println(selected);
-        Scanner scanner2 = new Scanner(System.in);
+        // String selected = scanner.nextLine();
+        // System.out.println(selected);
+        // Scanner scanner2 = new Scanner(System.in);
         int selected2 = scanner.nextInt();
 
         switch (selected2) {
@@ -40,18 +40,20 @@ public class practice03Test {
                 break;
         }
 
-        scanner.close();
-        scanner2.close();
+        // scanner2.close();
 
         // ------------------------------------------------------------------------------//
 
         System.out.println("[数あてゲーム!!]");
 
         int ans = new java.util.Random().nextInt(10);
-
+        Scanner scanner3 = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
             System.out.println("0~9の数字を入力して下さい");
-            int num = new java.util.Scanner(System.in).nextInt();
+            // int num = new java.util.Scanner(System.in).nextInt();
+
+            int num = scanner3.nextInt();
+
             if (num == ans) {
                 System.out.println("当たり!!");
                 break;
@@ -60,5 +62,9 @@ public class practice03Test {
             }
         }
         System.out.println("ゲームを終了します");
+
+        scanner.close();
+        scanner3.close();
+
     }
 }
