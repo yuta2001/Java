@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class practice03 {
 
@@ -64,13 +65,16 @@ public class practice03 {
 
         System.out.println("あなたの運勢を占います");
         System.out.println("あなたの名前を入力してください");
-        String you_name = new java.util.Scanner(System.in).nextLine();
+        // String you_name = new java.util.Scanner(System.in).nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String you_name = scanner.nextLine();
 
         System.out.println("あなたの年齢を入力して下さい");
-        int you_age = new java.util.Scanner(System.in).nextInt();
+        // int you_age = new java.util.Scanner(System.in).nextInt();
+        Scanner scanner2 = new Scanner(System.in);
+        int you_age = scanner2.nextInt();
 
-        System.out.println("結果が出ました!!文字を入力してください");
-        String result = new java.util.Scanner(System.in).nextLine();
+        System.out.println(you_age + "歳の" + you_name + "さんの運勢は・・・");
 
         int fortune = new java.util.Random().nextInt(4) + 1;
 
@@ -102,5 +106,8 @@ public class practice03 {
             default:
                 System.out.println("大凶です");
         }
+
+        scanner.close();
+        scanner2.close();
     }
 }
