@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class practice03Test {
     public static void main(String[] args) throws Exception {
         int isHungry = 1;
@@ -15,9 +17,15 @@ public class practice03Test {
 
         System.out.println("[メニュー]1:検索,2:登録,3:削除,4;変更>");
 
-        int selected = new java.util.Scanner(System.in).nextInt();
+        // int selected = new java.util.Scanner(System.in).nextInt();
 
-        switch (selected) {
+        Scanner scanner = new Scanner(System.in);
+        String selected = scanner.nextLine();
+        System.out.println(selected);
+        Scanner scanner2 = new Scanner(System.in);
+        int selected2 = scanner.nextInt();
+
+        switch (selected2) {
             case 1:
                 System.out.println("1:検索します");
                 break;
@@ -31,6 +39,9 @@ public class practice03Test {
                 System.out.println("4:変更します");
                 break;
         }
+
+        scanner.close();
+        scanner2.close();
 
         // ------------------------------------------------------------------------------//
 
