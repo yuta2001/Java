@@ -20,6 +20,7 @@ public class practice05 {
 
         System.out.println("メソッドの呼び出しを行います");
         hello();
+        hello2();
         System.out.println("メソッドの呼び出し終えました");
 
         // --------------------------------------------------
@@ -28,5 +29,9 @@ public class practice05 {
 
     public static void hello() throws Exception {
         System.out.println("Hello");
+    }
+
+    public static void hello2() throws Exception {
+        System.out.println("Hello2");
     }
 }

@@ -9,6 +9,7 @@ public class practice05_2 {
         System.out.println("methodB");
     }
 
+    // 必ずmainメソッドから読み込まれる。
     public static void main(String[] args) throws Exception {
         methodA();
     }
