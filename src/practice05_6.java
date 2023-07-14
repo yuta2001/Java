@@ -5,7 +5,7 @@ public class practice05_6 {
         }
     }
 
-    public static void mian(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
         int[] array = { 1, 2, 3, 4, 5 };
         printArray(array);
     }
